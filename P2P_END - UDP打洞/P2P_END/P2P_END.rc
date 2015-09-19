@@ -1,0 +1,268 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\P2P_END.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\P2P_END.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 P2P聊天室"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "P2P聊天室，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_P2P_END_DIALOG DIALOGEX 0, 0, 395, 429
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "分布式P2P聊天系统"
+FONT 10, "宋体", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "登陆",IDC_LOGIN,95,105,37,15
+    EDITTEXT        IDC_EDIT_LOGIN,50,39,81,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SERVMSG,6,225,250,116,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_SEND,12,364,232,53,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    DEFPUSHBUTTON   "发送",IDC_SERVSEND,248,403,37,14
+    LTEXT           "用户名：",IDC_STATIC,13,42,30,10
+    LTEXT           "服务器IP：",IDC_STATIC_IP,28,151,38,13
+    LTEXT           "端口：",IDC_STATIC_PORT,43,170,25,13
+    EDITTEXT        IDC_EDIT_SERVIP,69,150,67,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SERVPORT,69,167,36,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "退出聊天室",IDC_BUTTON_EXIT,6,205,49,15
+    LISTBOX         IDC_LIST1,265,225,70,122,LBS_SORT | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "用户列表：",IDC_STATIC_LIST,214,210,39,11
+    CONTROL         140,IDC_STATIC,"Static",SS_BITMAP,0,0,184,31
+    GROUPBOX        "",IDC_STATIC_BOX1,3,30,179,68
+    EDITTEXT        IDC_EDIT_PSW,50,61,81,13,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "密码：",IDC_STATIC_PSW,20,62,24,10
+    CONTROL         "记住密码",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,49,82,44,10
+    CONTROL         "自动登录",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,94,82,44,10
+    PUSHBUTTON      "取消",IDC_CANEL,142,105,37,15
+    PUSHBUTTON      "申请账号",IDC_REG1,139,38,37,15
+    PUSHBUTTON      "忘记密码",IDC_FORGET,139,60,37,15
+    PUSHBUTTON      "高级设置↓",IDC_SETTING,9,106,46,15,NOT WS_TABSTOP
+    GROUPBOX        "服务器设置",IDC_STATIC_BOX2,6,131,173,62
+    PUSHBUTTON      "清屏",IDC_BUTTON_CLEAR,203,345,41,13
+    EDITTEXT        IDC_EDIT_IDCARD,50,81,81,13,ES_AUTOHSCROLL | NOT WS_VISIBLE | NOT WS_TABSTOP
+    LTEXT           "身份证：",IDC_STATIC_IDCARD,12,82,33,10,NOT WS_VISIBLE
+    PUSHBUTTON      "注册",IDC_REG2,139,38,37,15,NOT WS_VISIBLE
+    PUSHBUTTON      "返回",IDC_BACK,139,60,37,15,NOT WS_VISIBLE
+    PUSHBUTTON      "找回密码",IDC_FORGET2,139,38,37,15,NOT WS_VISIBLE
+END
+
+IDD_P2PCHAT DIALOGEX 0, 0, 316, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "发送",IDC_BUTTON_SEND,109,168,50,14
+    EDITTEXT        IDC_EDIT_RECV,19,17,196,90,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_P2PSEND,20,126,195,39,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    PUSHBUTTON      "关闭",IDC_BUTTON_HIDE,166,168,50,14
+    PUSHBUTTON      "清屏",IDC_BUTTON_CLEAR,167,110,47,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "P2P_END.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "P2P_END.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_P2P_END_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 388
+        BOTTOMMARGIN, 422
+    END
+
+    IDD_P2PCHAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_PEERMSG             WAVE                    "res\\5.wav"
+IDR_UPLINE              WAVE                    "res\\UpLine.wav"
+IDR_EXITMSG             WAVE                    "res\\EXITMSG.wav"
+IDR_LOGINMSG            WAVE                    "res\\LOGINMSG.wav"
+IDR_MULCHATMSG          WAVE                    "res\\MULTIMSG.wav"
+IDR_FOLDER              WAVE                    "res\\FOLDER.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_UESTC_LOGO          BITMAP                  "res\\UESTC_LOGO.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 P2P_END(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 套接字初始化失败。"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\P2P_END.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
