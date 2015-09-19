@@ -26,7 +26,7 @@ public:
 	CPtrList m_P2PChatList;		//	保存对话框到列表
 	BOOL m_Extend;  //设置服务器IP
 	void ReceiveData(CClientSock *m_ClientSock);
-	void UpdateUserList(Message *buffer);		//	把服务器发来的存入缓存的东西更新到列表
+	void UpdateUserList(Message *buffer);		//把服务器发来的存入缓存的东西更新到列表
 	void ShowP2PChatDlg(Message *buffer);
 	void AddRecvMsg(CString *, Message *);
 	void RecvP2PMsg(Message *p_PeerBuffer);
